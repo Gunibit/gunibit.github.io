@@ -1,0 +1,195 @@
+/* ==========================================================================
+   GUNIBIT "POR QUÉ GUNIBIT" SECTION STYLES
+   Fondo azul marino con degradado azul tecnológico e iluminación sobria
+   ========================================================================== */
+
+.gunibit-why-section {
+  background: var(--gunibit-gradient-navy);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #132b4f;
+  border-bottom: 1px solid #132b4f;
+}
+
+/* Fondos geométricos sutiles */
+.why-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(77, 163, 255, 0.08) 1px, transparent 0);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.why-glow-accent {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(18, 97, 201, 0.25) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.why-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezado */
+.why-header .why-tag {
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gunibit-blue-light);
+  background: rgba(18, 97, 201, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(77, 163, 255, 0.25);
+}
+
+.why-header .why-title {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.why-header .why-description {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+/* Grid de Características */
+.why-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.why-feature-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all var(--transition-normal);
+}
+
+.why-feature-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(77, 163, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.why-feature-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(18, 97, 201, 0.3);
+  color: var(--gunibit-blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(77, 163, 255, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.why-feature-card:hover .why-feature-icon-box {
+  background: var(--gunibit-blue);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.why-feature-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gunibit-blue-light);
+  margin-bottom: 0.5rem;
+}
+
+.why-feature-title {
+  color: #ffffff;
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.why-feature-text {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* Banner de Compromiso al Pie */
+.why-bottom-banner {
+  background: rgba(18, 97, 201, 0.12);
+  border: 1px solid rgba(77, 163, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: center;
+}
+
+.banner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gunibit-blue-light);
+  flex-shrink: 0;
+  animation: pulseSubtle 2s infinite;
+}
+
+.banner-content p {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.banner-content strong {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+  .why-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .why-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .why-bottom-banner {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

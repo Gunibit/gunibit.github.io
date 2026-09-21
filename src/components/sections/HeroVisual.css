@@ -1,0 +1,297 @@
+/* ==========================================================================
+   GUNIBIT HERO VISUAL STYLES
+   Composición técnica sobria, sin neones desmedidos ni estética gamer
+   ========================================================================== */
+
+.hero-visual-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Fondo geométrico sutil */
+.tech-geometric-accent.tech-grid {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(18, 97, 201, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+  z-index: 0;
+  pointer-events: none;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+}
+
+.tech-glow-spot {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(18, 97, 201, 0.14) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* Tarjeta Principal de Ingeniería */
+.engineering-card-main {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gunibit-border);
+  box-shadow: var(--gunibit-shadow-xl);
+  overflow: hidden;
+  transition: transform var(--transition-normal);
+}
+
+.engineering-card-main:hover {
+  transform: translateY(-3px);
+}
+
+/* Cabecera de la consola */
+.console-header {
+  background: var(--gunibit-navy);
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.console-window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.console-window-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.dot-red { background-color: #ef4444; }
+.dot-yellow { background-color: #f59e0b; }
+.dot-green { background-color: #10b981; }
+
+.console-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #cbd5e1;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.console-icon {
+  color: var(--gunibit-blue-light);
+}
+
+.console-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.status-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10b981;
+  animation: pulseSubtle 2s infinite;
+}
+
+/* Cuerpo de la consola */
+.console-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+/* Métricas clave */
+.metrics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.metric-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--gunibit-background);
+  border: 1px solid var(--gunibit-border-light);
+  border-radius: var(--radius-md);
+}
+
+.metric-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--gunibit-blue-subtle);
+  color: var(--gunibit-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--gunibit-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-val {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--gunibit-navy);
+  font-weight: 700;
+}
+
+/* Bloque de código */
+.console-code-block {
+  background: #071527;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: #e2e8f0;
+  border-left: 3px solid var(--gunibit-blue);
+}
+
+.code-keyword { color: #f43f5e; font-weight: 600; }
+.code-var { color: #38bdf8; }
+.code-func { color: #818cf8; }
+.code-comment { color: #64748b; font-style: italic; }
+.code-prop { color: #facc15; }
+.code-val { color: #4ade80; }
+.code-line.indent { padding-left: 1.25rem; }
+
+/* Tags de estado */
+.services-status-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.service-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gunibit-navy);
+  background: var(--gunibit-blue-subtle);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(18, 97, 201, 0.15);
+}
+
+.service-status-tag .check-icon {
+  color: var(--gunibit-blue);
+}
+
+/* Badges flotantes */
+.floating-badge {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #ffffff;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--gunibit-shadow-lg);
+  border: 1px solid var(--gunibit-border);
+  transition: transform var(--transition-normal);
+}
+
+.floating-badge:hover {
+  transform: translateY(-2px);
+}
+
+.badge-security {
+  bottom: -15px;
+  left: -15px;
+}
+
+.badge-support {
+  top: 10px;
+  right: -20px;
+}
+
+.badge-icon-bubble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-icon-bubble.blue {
+  background: var(--gunibit-blue-subtle);
+  color: var(--gunibit-blue);
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gunibit-navy);
+  line-height: 1.2;
+}
+
+.badge-subtitle {
+  font-size: 0.7rem;
+  color: var(--gunibit-text-muted);
+}
+
+@media (max-width: 980px) {
+  .hero-visual-wrapper {
+    max-width: 480px;
+    padding: 1rem 0;
+  }
+  
+  .badge-security {
+    bottom: -10px;
+    left: 0;
+  }
+
+  .badge-support {
+    top: 5px;
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-badge {
+    display: none;
+  }
+}

@@ -1,0 +1,202 @@
+/* ==========================================================================
+   GUNIBIT FOOTER STYLES
+   Diseño corporativo en azul marino profundo, limpio y estructurado
+   ========================================================================== */
+
+.gunibit-footer-wrapper {
+  background: var(--gunibit-navy-dark);
+  color: #94a3b8;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #132b4f;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Columna de Marca */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-tagline-text {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+  max-width: 340px;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  background: var(--gunibit-blue);
+  color: #ffffff;
+  border-color: var(--gunibit-blue);
+  transform: translateY(-2px);
+}
+
+/* Columnas de Enlaces */
+.footer-col-title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  letter-spacing: -0.01em;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-links-list a {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-links-list a:hover {
+  color: var(--gunibit-blue-light);
+  transform: translateX(3px);
+}
+
+/* Columna Contacto Oficial */
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.contact-icon {
+  color: var(--gunibit-blue-light);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 0.15rem;
+}
+
+.detail-value {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+a.detail-value:hover {
+  color: var(--gunibit-blue-light);
+}
+
+.detail-value.text-static {
+  color: #e2e8f0;
+}
+
+/* Barra inferior Legal & Copyright */
+.footer-bottom-bar {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.footer-copyright p {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.footer-copyright strong {
+  color: #ffffff;
+}
+
+.engineering-sub {
+  display: block;
+  font-size: 0.75rem;
+  color: #475569;
+  margin-top: 0.15rem;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legal-link {
+  color: #64748b;
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.legal-link:hover {
+  color: var(--gunibit-blue-light);
+}
+
+.legal-separator {
+  color: #334155;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

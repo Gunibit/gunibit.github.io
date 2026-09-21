@@ -1,0 +1,179 @@
+/* ==========================================================================
+   GUNIBIT NAVBAR STYLES
+   Diseño sobrio, estable, fondo blanco con ligera sombra y blur sutil
+   ========================================================================== */
+
+.gunibit-navbar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gunibit-border-light);
+  z-index: 1000;
+  transition: box-shadow var(--transition-normal), background-color var(--transition-normal);
+}
+
+.gunibit-navbar-wrapper.scrolled {
+  box-shadow: var(--gunibit-shadow-navbar);
+  border-bottom-color: rgba(226, 232, 240, 0.8);
+}
+
+.gunibit-navbar-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gunibit-navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Enlaces Desktop */
+.gunibit-nav-desktop {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gunibit-text-body);
+  position: relative;
+  padding: 0.5rem 0.25rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--gunibit-blue);
+}
+
+.nav-link.active {
+  color: var(--gunibit-navy);
+  font-weight: 600;
+}
+
+/* Indicador visual discreto para enlace activo */
+.active-dot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 2px;
+  background-color: var(--gunibit-blue);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+}
+
+/* Acciones Navbar */
+.gunibit-navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-support-btn {
+  display: inline-flex;
+}
+
+/* Botón Hamburguesa */
+.mobile-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  color: var(--gunibit-navy);
+  background: transparent;
+  border: 1px solid var(--gunibit-border);
+  transition: all var(--transition-fast);
+}
+
+.mobile-menu-toggle:hover {
+  background-color: var(--gunibit-blue-subtle);
+  color: var(--gunibit-blue);
+}
+
+/* Menú Móvil */
+.gunibit-nav-mobile {
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background-color: var(--gunibit-white);
+  border-bottom: 1px solid var(--gunibit-border);
+  box-shadow: var(--gunibit-shadow-lg);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gunibit-nav-mobile.open {
+  max-height: 380px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-inner {
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.mobile-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.mobile-link {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gunibit-navy);
+  padding: 0.6rem 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+  color: var(--gunibit-blue);
+  background-color: var(--gunibit-blue-subtle);
+  padding-left: 0.85rem;
+}
+
+/* Media Query Responsive */
+@media (max-width: 880px) {
+  .gunibit-nav-desktop {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .navbar-support-btn {
+    display: none;
+  }
+}

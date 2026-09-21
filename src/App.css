@@ -1,0 +1,35 @@
+/* ==========================================================================
+   GUNIBIT APP SHELL STYLES
+   ========================================================================== */
+
+.gunibit-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main#main-content {
+  flex: 1 0 auto;
+  outline: none;
+}
+
+/* Enlace de accesibilidad: Saltar al contenido principal */
+.skip-to-content {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background: var(--gunibit-navy);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  box-shadow: var(--gunibit-shadow-lg);
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+  outline: 2px solid var(--gunibit-blue-light);
+}

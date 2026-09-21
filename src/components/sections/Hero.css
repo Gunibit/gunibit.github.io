@@ -1,0 +1,156 @@
+/* ==========================================================================
+   GUNIBIT HERO SECTION STYLES
+   Composición dividida: Izquierda texto y CTAs / Derecha visual tecnológico
+   ========================================================================== */
+
+.gunibit-hero-section {
+  position: relative;
+  background: var(--gunibit-gradient-hero);
+  padding-top: 4.5rem;
+  padding-bottom: 5.5rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--gunibit-border-light);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* Columna Izquierda */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gunibit-blue-subtle);
+  color: var(--gunibit-blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(18, 97, 201, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge-icon {
+  color: var(--gunibit-blue);
+}
+
+.hero-title {
+  color: var(--gunibit-navy);
+  margin-bottom: 1.25rem;
+  line-height: 1.18;
+}
+
+.highlight-text {
+  color: var(--gunibit-blue);
+  background: linear-gradient(135deg, #1261c9 0%, #388bfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 1.12rem;
+  color: var(--gunibit-text-body);
+  line-height: 1.65;
+  margin-bottom: 2.25rem;
+  max-width: 540px;
+}
+
+/* Botones de acción */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* Lista de confianza rápida */
+.hero-trust-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gunibit-border);
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gunibit-text-muted);
+}
+
+.trust-icon {
+  color: var(--gunibit-blue);
+}
+
+/* Columna Derecha */
+.hero-visual-col {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .gunibit-hero-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .gunibit-btn {
+    width: 100%;
+  }
+
+  .hero-trust-list {
+    gap: 0.85rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}

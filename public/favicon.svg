@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#0b1f3a"/>
+  <!-- Circuit node / Geometric G-Tech icon -->
+  <path d="M14 16C14 13.7909 15.7909 12 18 12H30C32.2091 12 34 13.7909 34 16V22H26V26H34V32C34 34.2091 32.2091 36 30 36H18C15.7909 36 14 34.2091 14 32V16Z" stroke="#1261c9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="3" fill="#4da3ff"/>
+  <line x1="14" y1="24" x2="21" y2="24" stroke="#4da3ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="27" y1="24" x2="34" y2="24" stroke="#4da3ff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="14" cy="24" r="1.5" fill="#ffffff"/>
+  <circle cx="34" cy="24" r="1.5" fill="#ffffff"/>
+</svg>

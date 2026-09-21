@@ -1,0 +1,72 @@
+/* ==========================================================================
+   GUNIBIT DESIGN SYSTEM TOKENS
+   Identidad: Blanco + Azul Marino Profundo + Azul Tecnológico
+   ========================================================================== */
+
+:root {
+  /* Paleta Corporativa Principal */
+  --gunibit-navy-dark: #071527;
+  --gunibit-navy: #0b1f3a;
+  --gunibit-navy-light: #132b4f;
+  --gunibit-navy-muted: #1e3a63;
+
+  /* Azules Tecnológicos */
+  --gunibit-blue: #1261c9;
+  --gunibit-blue-hover: #0e4fa8;
+  --gunibit-blue-light: #388bfd;
+  --gunibit-blue-lighter: #60a5fa;
+  --gunibit-blue-subtle: #edf4fe;
+  --gunibit-blue-glow: rgba(18, 97, 201, 0.15);
+
+  /* Fondos y Neutros Claros */
+  --gunibit-white: #ffffff;
+  --gunibit-background: #f8fafc;
+  --gunibit-background-alt: #f1f5f9;
+  --gunibit-surface: #ffffff;
+  --gunibit-surface-muted: #f8fafc;
+  
+  /* Textos */
+  --gunibit-text: #0f172a;
+  --gunibit-text-body: #334155;
+  --gunibit-text-muted: #64748b;
+  --gunibit-text-light: #94a3b8;
+  --gunibit-text-inverse: #ffffff;
+
+  /* Bordes y Líneas */
+  --gunibit-border: #e2e8f0;
+  --gunibit-border-focus: #1261c9;
+  --gunibit-border-light: #f1f5f9;
+
+  /* Gradientes de Ingeniería */
+  --gunibit-gradient-primary: linear-gradient(135deg, #0b1f3a 0%, #1261c9 100%);
+  --gunibit-gradient-navy: linear-gradient(145deg, #071527 0%, #0b1f3a 60%, #11284a 100%);
+  --gunibit-gradient-blue: linear-gradient(135deg, #1261c9 0%, #388bfd 100%);
+  --gunibit-gradient-subtle: linear-gradient(180deg, #f8fafc 0%, #edf4fe 100%);
+  --gunibit-gradient-hero: linear-gradient(180deg, #ffffff 0%, #f4f8fd 100%);
+  --gunibit-gradient-card: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+
+  /* Sombras Precisas y Elegantes */
+  --gunibit-shadow-sm: 0 1px 2px 0 rgba(11, 31, 58, 0.05);
+  --gunibit-shadow-md: 0 4px 6px -1px rgba(11, 31, 58, 0.07), 0 2px 4px -2px rgba(11, 31, 58, 0.05);
+  --gunibit-shadow-lg: 0 10px 15px -3px rgba(11, 31, 58, 0.08), 0 4px 6px -4px rgba(11, 31, 58, 0.04);
+  --gunibit-shadow-xl: 0 20px 25px -5px rgba(11, 31, 58, 0.08), 0 8px 10px -6px rgba(11, 31, 58, 0.03);
+  --gunibit-shadow-blue: 0 8px 20px -4px rgba(18, 97, 201, 0.25);
+  --gunibit-shadow-navbar: 0 2px 12px 0 rgba(11, 31, 58, 0.06);
+
+  /* Tipografía */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Radios de Borde Controlados (sin excesiva curvatura infantil) */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Layout y Espaciado */
+  --max-width: 1240px;
+  --navbar-height: 72px;
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

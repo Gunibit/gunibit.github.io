@@ -1,0 +1,29 @@
+/* ==========================================================================
+   GUNIBIT SERVICES SECTION STYLES
+   Grid responsivo de 3 columnas (desktop), 2 (tablet), 1 (móvil)
+   ========================================================================== */
+
+.gunibit-services-section {
+  background-color: var(--gunibit-background);
+  border-bottom: 1px solid var(--gunibit-border-light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

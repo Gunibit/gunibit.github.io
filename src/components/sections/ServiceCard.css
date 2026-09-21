@@ -1,0 +1,114 @@
+/* ==========================================================================
+   GUNIBIT SERVICE CARD STYLES
+   Tarjetas profesionales con hover sutil y limpio
+   ========================================================================== */
+
+.gunibit-service-card {
+  background: var(--gunibit-white);
+  border: 1px solid var(--gunibit-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-normal);
+  position: relative;
+  box-shadow: var(--gunibit-shadow-sm);
+}
+
+.gunibit-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(18, 97, 201, 0.4);
+  box-shadow: var(--gunibit-shadow-lg);
+}
+
+/* Cabecera de la tarjeta */
+.service-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.service-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--gunibit-blue-subtle);
+  color: var(--gunibit-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+  border: 1px solid rgba(18, 97, 201, 0.1);
+}
+
+.gunibit-service-card:hover .service-icon-box {
+  background: var(--gunibit-blue);
+  color: var(--gunibit-white);
+  transform: scale(1.05);
+}
+
+.service-icon-svg {
+  transition: transform var(--transition-fast);
+}
+
+.service-category-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gunibit-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Cuerpo de la tarjeta */
+.service-card-body {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.service-card-title {
+  color: var(--gunibit-navy);
+  font-size: 1.22rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+  transition: color var(--transition-fast);
+}
+
+.gunibit-service-card:hover .service-card-title {
+  color: var(--gunibit-blue);
+}
+
+.service-card-description {
+  font-size: 0.95rem;
+  color: var(--gunibit-text-body);
+  line-height: 1.6;
+}
+
+/* Footer de la tarjeta */
+.service-card-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--gunibit-border-light);
+}
+
+.service-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gunibit-navy);
+  transition: all var(--transition-fast);
+}
+
+.action-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.gunibit-service-card:hover .service-action-link {
+  color: var(--gunibit-blue);
+}
+
+.gunibit-service-card:hover .action-arrow {
+  transform: translate(2px, -2px);
+}

@@ -1,0 +1,132 @@
+/* ==========================================================================
+   GUNIBIT LOGO STYLES
+   Diseño de marca: Presencia importante, sobria y escalable
+   ========================================================================== */
+
+.gunibit-logo-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  user-select: none;
+  transition: transform var(--transition-fast);
+}
+
+.gunibit-logo-brand:hover {
+  transform: translateY(-1px);
+}
+
+/* Contenedor del Isotipo */
+.gunibit-logo-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-icon-svg {
+  width: 38px;
+  height: 38px;
+  transition: all var(--transition-normal);
+}
+
+.symbol-bg {
+  fill: #0b1f3a;
+  transition: fill var(--transition-fast);
+}
+
+.symbol-path {
+  stroke: #1261c9;
+}
+
+.symbol-node {
+  fill: #4da3ff;
+}
+
+.symbol-link {
+  stroke: #4da3ff;
+}
+
+.symbol-terminal {
+  fill: #ffffff;
+}
+
+/* Tipografía de Marca */
+.gunibit-logo-typography {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gunibit-logo-name {
+  font-family: var(--font-family-base);
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--gunibit-navy);
+  display: flex;
+  align-items: baseline;
+}
+
+.name-accent {
+  color: var(--gunibit-blue);
+}
+
+.brand-dot {
+  color: var(--gunibit-blue-light);
+  margin-left: 1px;
+}
+
+.gunibit-logo-tagline {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--gunibit-text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+/* Versión Invertida (para fondos oscuros como Footer) */
+.gunibit-logo-brand.inverted .symbol-bg {
+  fill: #1261c9;
+}
+
+.gunibit-logo-brand.inverted .symbol-path {
+  stroke: #ffffff;
+}
+
+.gunibit-logo-brand.inverted .symbol-node {
+  fill: #93c5fd;
+}
+
+.gunibit-logo-brand.inverted .symbol-link {
+  stroke: #93c5fd;
+}
+
+.gunibit-logo-brand.inverted .gunibit-logo-name {
+  color: #ffffff;
+}
+
+.gunibit-logo-brand.inverted .name-accent {
+  color: var(--gunibit-blue-light);
+}
+
+.gunibit-logo-brand.inverted .gunibit-logo-tagline {
+  color: #94a3b8;
+}
+
+/* Variantes de tamaño */
+.gunibit-logo-brand.size-small .logo-icon-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.gunibit-logo-brand.size-small .gunibit-logo-name {
+  font-size: 1.2rem;
+}
+
+.gunibit-logo-brand.size-small .gunibit-logo-tagline {
+  font-size: 0.6rem;
+}
